@@ -79,6 +79,32 @@ sess = tf.Session()
 print(sess.run(hello))  
 ```
 
+```
+import tensorflow as tf
+tf __version__
+```
+
+```
+# Create a constant op 
+# This op is added as a node to the default graph 
+hello = tf.constant("Hello, TensorFlow!") 
+
+# start a TF session 
+sess = tf.Session() 
+
+# run the op and get result 
+print(sess.run(hello))
+```
+
+```
+node1 = tf.constant(3.0, tf.float32) 
+node2 = tf.constant(4.0)  # also tf.float32 implicitly 
+node3 = tf.add(node1, node2)
+
+print("node1:", node1, "node2:", node2) 
+print("node3: ", node3)
+```
+
 4. MNIST 처리
 tf-mnist-softmax.py  
 tf-mnist-cnn.py  
